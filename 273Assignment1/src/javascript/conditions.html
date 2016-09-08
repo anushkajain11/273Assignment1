@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>JavaScript | Conditions</title>
+</head>
+<body>
+<h1> JavaScript Conditions</h1>
+<p>Enter a number:</p>
+<input type="text" id = "number" ><br>
+<br>
+<button onclick="evenOdd()">Check</button>
+<p id="result"></p>
+</body>
+<script>
+function evenOdd(){
+	var n= document.getElementById("number").value;
+	if(n%2==0)
+		document.getElementById("result").innerHTML="You entered an even number";
+	else
+		document.getElementById("result").innerHTML="You entered an odd number";
+	}
+</script>
+</html>
