@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Javascript | Events</title>
+</head>
+<body>
+<h1>Javascript Events</h1>
+
+<button onmouseover="display()" onmouseout="remove()"></button>
+<p id ="result"></p>
+</body>
+<script>
+function display(){
+	document.getElementById("result").innerHTML="Cursor is over Button!";	
+}
+
+function remove(){
+	document.getElementById("result").innerHTML="Cursor is no longer on Button!";
+}
+</script>
+</html>
