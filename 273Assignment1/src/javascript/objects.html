@@ -3,7 +3,6 @@
 	<title> Javascript | Objects</title>
 </head>
 <body>
-
 <h1> Javascript Objects</h1>
 <p id ="result"></p>
 </body>
@@ -12,12 +11,10 @@ var number = parseInt(prompt("Enter the population of the place"));
 //var number = document.getelemetById("popu").value;
 
 var city = new place(number);
-if(city.population > 500000)
-	{console.log("Place is a city");
-	document.getElementById("result").innerHTML = "Place is a city";}
-else
-	{console.log("Place is a suburb");
-	document.getElementById("result").innerHTML = "Place is a suburb";}
+if(city.population > 500000){
+	document.getElementById("result").innerHTML = "Place is a city with population of " + city.population;}
+else{
+	document.getElementById("result").innerHTML = "Place is a suburb with population of " + city.population;}
 
 	function place(number){
 		this.population = number;
