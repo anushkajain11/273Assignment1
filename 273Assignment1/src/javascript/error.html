@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Javascript | Errors</title>
+</head>
+<body>
+<h1>Javascript | Errors </h1>
+<h3>Answer the security questions</h3>
+What is your place of birth: <br><br>
+<input type="text" id="place"><br><br>
+What is your first pet's name: <br><br>
+<input type="text" id="pet"><br><br>
+<button onclick = "check()">Submit</button>
+<p id ="result"></p>
+</body>
+<script>
+function check(){
+	var place=document.getElementById("place").value;
+	var name=document.getElementById("pet").value;
+	try{
+		if(place=="San Jose" && name=="Tommy")
+			throw "You are good to go!";
+		else
+			throw "Your answers does not match! Sorry";
+	}
+	catch(err){
+		document.getElementById("result").innerHTML = err;
+	}
+}
+
+</script>
+</html>
