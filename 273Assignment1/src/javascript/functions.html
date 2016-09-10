@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>JavaScript | Functions</title>
+</head>
+<body>
+<h1>JavaScript Functions</h1>
+<h2> Enter voter information</h2>
+Name: <br><br>
+<input type="text" id="name"><br><br>
+Age:<br><br>
+<input type="text" id="age"><br><br>
+Citizenship: <br><br>
+<select id="citizenship">
+	<option>China</option>
+	<option>India</option>
+	<option>Iraq</option>
+	<option>Pakistan</option>
+	<option>USA</option>
+</select><br>
+<br>
+<button onclick = "register()">Submit</button>
+ <p id ="result"> </p>
+</body>
+<script>
+function register(){
+	var name= document.getElementById("name").value;
+	var age= parseInt(document.getElementById("age").value);
+	var citizen= document.getElementById("citizenship").value;
+	if(age>=18 && citizen == "India"){
+		document.getElementById("result").innerHTML="Hi " + name + "! You are successfully registered.";
+		}
+	else{
+		document.getElementById("result").innerHTML="Hi " + name + "! You do not qualify for voting.";
+	}
+	
+}
+</script>
+</html>
