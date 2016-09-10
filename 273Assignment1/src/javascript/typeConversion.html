@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Javascript | Type Conversion</title>
+</head>
+<body>
+<h1>JavaScript Type Conversion</h1>
+<input type="text" id="number"><br><br>
+<button onclick ="convert()">Convert</button>
+<p id ="result"></p>
+</body>
+
+<script>
+function convert()
+{	
+	var n= document.getElementById("number").value;
+	var m = Number(document.getElementById("number").value);
+	document.getElementById("result").innerHTML = typeof n + "<br>" + typeof m;
+}
+</script>
+</html>
