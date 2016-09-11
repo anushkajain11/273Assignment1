@@ -11,7 +11,7 @@ public class Main {
 		m.enterMaze("D");
 		m.display();
 		m.enterMaze("E");
-		m.exitMaze();
+		String deleted = m.exitMaze();
 		m.display();
 	}
 

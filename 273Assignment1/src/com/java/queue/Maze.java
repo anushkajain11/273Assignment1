@@ -25,12 +25,16 @@ public class Maze {
 			}
 	}
 	
-	public void exitMaze()
+	public String exitMaze()
 	{
 		if(front == null){
 		System.out.println("There is no one in Maze!");
+		return null;
 		}
+		String t= front.name;
 		front = front.next;
+		return t;
+		
 	}
 	
 	public void display()
