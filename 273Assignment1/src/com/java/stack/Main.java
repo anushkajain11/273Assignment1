@@ -1,4 +1,4 @@
-package java.stack;
+package com.java.stack;
 
 public class Main {
 

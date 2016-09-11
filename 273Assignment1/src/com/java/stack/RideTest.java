@@ -1,4 +1,4 @@
-package java.stack;
+package com.java.stack;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
