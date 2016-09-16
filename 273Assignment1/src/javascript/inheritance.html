@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>JavaScript | Inheritance</title>
+</head>
+<body>
+<h1> JavaScript Inheritance</h1>
+<p id= "result"></p>
+
+</body>
+<script>
+	var a={
+			name:"Alex"
+	};
+	var b = Object.create(a);
+	document.getElementById("result").innerHTML = "Called by child whose parent is " + b.name;
+</script>
+</html>
