@@ -1,0 +1,29 @@
+<html>
+<body>
+<h1>HTML Local Storage</h1>
+<h3>Check password</h3>
+<input type="text" id="username">
+<button onClick="submit()">Submit</button><br><br>
+
+<div id="result"></div>
+
+<script>
+function submit(){
+	if (typeof(Storage) !== "undefined") {
+		var user= document.getElementById("username").value;
+		if(user == "anushka"){
+			localStorage.setItem("password", "qwerty123");
+			document.getElementById("result").innerHTML = localStorage.getItem("password");
+			}
+		else
+			document.getElementById("result").innerHTML = "user not found";	
+    
+	} else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+}
+
+</script>
+
+</body>
+</html>
