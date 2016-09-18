@@ -10,11 +10,11 @@ public class GuestList {
 		int v; char c;
 		System.out.println("Welcome! Register here!!");
 		do{
-		System.out.println("enter your student ID");
-		v = sc.nextInt();
-		guestlist.add(v);
-		System.out.println("want to add more?");
-		c = sc.next().trim().charAt(0);
+			System.out.println("enter your student ID");
+			v = sc.nextInt();
+			guestlist.add(v);
+			System.out.println("want to add more?");
+			c = sc.next().trim().charAt(0);
 		}while(c =='y');
 		
 		Iterator<Integer> it= guestlist.iterator();

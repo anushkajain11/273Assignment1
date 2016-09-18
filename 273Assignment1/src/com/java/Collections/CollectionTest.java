@@ -15,9 +15,10 @@ public class CollectionTest {
 		Set <Integer> guestlist = new HashSet<Integer>();
 		Iterator<Integer> it= guestlist.iterator();
 		guestlist.add(8547);
-		guestlist.add(1254);
-		int value = it.next();
-		assertEquals(1254,value);
+		while(it.hasNext()){
+		 int value=it.next();
+		assertEquals(8547,value);
+		}
 	}
 
 }
