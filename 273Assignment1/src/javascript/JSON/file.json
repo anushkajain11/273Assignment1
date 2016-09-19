@@ -1,0 +1,20 @@
+data=[
+	{
+		"name" : "Alex",
+		"id" : "001",
+		"courses":[
+			{"name" :"CmpE 202", "section":"02"},
+			{"name" :"CmpE 206", "section":"01"},
+		]
+	},
+	{
+		"name" : "Bob",
+		"id" : "011",
+		"courses":[
+			{"name" :"CmpE 246", "section":"01"},
+			{"name" :"CmpE 294", "section":"04"},
+		]
+	}
+	
+
+];
